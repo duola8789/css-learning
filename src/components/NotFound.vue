@@ -1,5 +1,7 @@
 <template>
-  <h1>404 - Not found</h1>
+  <div>
+    <h1 class="content-title">404 - Not found</h1>
+  </div>
 </template>
 
 <script>
@@ -9,5 +11,4 @@ export default {
 </script>
 
 <style scoped>
-
 </style>
