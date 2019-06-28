@@ -2,15 +2,7 @@
 
 ## 说明
 
-Vue项目脚手架，由Vue-cli 3创建而来。
-
-已配置功能：
-
-1. Vue-Router
-2. [AlloyTeam ESLint 规则](https://github.com/AlloyTeam/eslint-config-alloy#vue)
-3. Pre-Commit检查
-4. 自动注册`./src/pages`目录下的组件到路由，未匹配路径匹配NotFound组件
-5. Reset CSS
+CSS练习项目，每天练一练。前期按照[CSS Tricks](https://lhammer.cn/You-need-to-know-css/#/)进行练习。
 
 ## 命令
 
