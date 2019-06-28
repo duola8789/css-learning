@@ -11,6 +11,7 @@
     <main class="main">
       <router-view />
     </main>
+    <a class="corner" href="https://lhammer.cn/You-need-to-know-css/#/zh-cn/" title="CSS Tricks"></a>
   </div>
 </template>
 
@@ -115,6 +116,35 @@ export default {
     .main {
       margin-left: @asideWidth;
       padding: 100px;
+    }
+    .corner {
+      position: fixed;
+      right: 0;
+      top: 0;
+      display: block;
+      width: 100px;
+      height: 100px;
+      border-radius:  0 0 0 100% ;
+      background: rgba(150, 150, 150, 0.4);
+      cursor: pointer;
+      &:before {
+        content: '';
+        display: block;
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        left: 35px;
+        top: 15px;
+        background: url('assets/css-tricks.png') no-repeat;
+        background-size: contain;
+        transform: scale(1);
+        visibility: visible;
+        transition: all 0.3s linear;
+      }
+      &:hover:before {
+        transform: scale(1.2);
+      }
+
     }
   }
 </style>
