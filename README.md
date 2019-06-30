@@ -36,3 +36,7 @@ yarn run lint
 --report-json 生成 report.json 以帮助分析包内容
 --watch       监听文件变化
 ```
+
+## 路由
+
+在`router/index.js`中配置了路由，`pages`目录下每个组件的名称为路由的地址，每个组件的`title`属性为导航栏的文字。

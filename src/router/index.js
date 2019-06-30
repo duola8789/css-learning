@@ -5,7 +5,12 @@ import helper from '@/utils/helper';
 
 Vue.use(Router);
 
-const routes = helper.getPagesComp();
+const routes = helper.getPagesComp().map(v => {
+  if (v.path === '/home') {
+    v.alias = '/';
+  }
+  return v;
+});
 
 // 404
 routes.push({
