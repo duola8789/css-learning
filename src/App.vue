@@ -1,7 +1,9 @@
 <template>
   <div id="app" class="app">
     <nav class="nav">
-      <h1 class="title"><router-link to="home">CSS-Learning</router-link></h1>
+      <h1 class="title">
+        <router-link to="home">CSS-Learning</router-link>
+      </h1>
       <ul class="menus">
         <li v-for="link in links" :key="link.path" class="link-item">
           <router-link :to="link.path">{{link.title}}</router-link>
@@ -30,7 +32,7 @@ export default {
 </script>
 
 <!-- 全局样式 -->
-<style>
+<style lang="less">
   @import 'assets/styles/reset.css';
 
   #app {
@@ -39,6 +41,7 @@ export default {
     text-align: center;
     color: #2c3e50;
   }
+
   a {
     display: inline-block;
     position: relative;
@@ -47,6 +50,7 @@ export default {
     font-weight: 400;
     line-height: 1.2;
   }
+
   a:before {
     content: "";
     position: absolute;
@@ -59,13 +63,42 @@ export default {
     transform: scale(0);
     transition: all 0.2s ease-in-out;
   }
+
   a:hover:before {
     visibility: visible;
     transform: scale(1);
   }
+
   .content-title {
     font-size: 30px;
     text-align: left;
+    margin-bottom: 20px;
+  }
+
+  .code-inline {
+    padding: 0 2px;
+    margin: 0 2px;
+    font-size: inherit;
+    font-weight: inherit;
+    border-radius: 2px;
+    background: rgba(220, 220, 220, 0.5);
+    word-wrap: break-word;
+    font-family: consolas, "Liberation Mono", courier, monospace;
+  }
+
+  .intro {
+    p {
+      margin: 10px 0;
+      line-height: 1.5;
+    }
+    .ol-list {
+      margin: 10px 0;
+      li {
+        margin: 5px 0;
+        list-style-type: circle;
+        list-style-position: inside;
+      }
+    }
   }
 </style>
 
@@ -84,29 +117,35 @@ export default {
       overflow-y: auto;
 
       /* 滚动条 */
+
       &::-webkit-scrollbar {
         width: 4px;
       }
+
       &::-webkit-scrollbar-thumb {
         background: transparent;
         border-radius: 4px;
       }
+
       &:hover::-webkit-scrollbar-thumb {
         background-color: rgba(135, 135, 135, 0.4);
       }
 
       .title {
         margin: 20px 0 30px;
+
         a {
           font-weight: 600;
           font-size: 20px;
           color: @mainColor;
         }
       }
+
       .link-item {
         padding: 10px 0;
         font-size: 16px;
         text-align: left;
+
         a {
           max-width: 100%;
           overflow: hidden;
@@ -115,10 +154,12 @@ export default {
         }
       }
     }
+
     .main {
       margin-left: @asideWidth;
       padding: 100px;
     }
+
     .corner {
       position: fixed;
       right: 0;
@@ -126,9 +167,10 @@ export default {
       display: block;
       width: 100px;
       height: 100px;
-      border-radius:  0 0 0 100% ;
+      border-radius: 0 0 0 100%;
       background: rgba(150, 150, 150, 0.4);
       cursor: pointer;
+
       &:before {
         content: '';
         display: block;
@@ -137,12 +179,13 @@ export default {
         position: absolute;
         left: 35px;
         top: 15px;
-        background: url('assets/css-tricks.png') no-repeat;
+        background: url('assets/images/css-tricks.png') no-repeat;
         background-size: contain;
         transform: scale(1);
         visibility: visible;
         transition: all 0.3s linear;
       }
+
       &:hover:before {
         transform: scale(1.2);
       }
