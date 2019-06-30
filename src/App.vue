@@ -29,9 +29,10 @@ export default {
 };
 </script>
 
+<!-- 全局样式 -->
 <style>
-  /* 全局样式 */
-  @import './assets/reset.css';
+  @import 'assets/styles/reset.css';
+
   #app {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -70,6 +71,7 @@ export default {
 
 <style scoped lang="less">
   @asideWidth: 300px;
+
   .app {
     .nav {
       position: fixed;
@@ -98,7 +100,7 @@ export default {
         a {
           font-weight: 600;
           font-size: 20px;
-          color: #364149;
+          color: @mainColor;
         }
       }
       .link-item {

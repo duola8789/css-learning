@@ -1,11 +1,11 @@
 <template>
-  <h1 class="content-title">Hello World!</h1>
+  <h1 class="content-title">Hello CSS!</h1>
 </template>
 
 <script>
 export default {
   name: 'home',
-  title: 'homepage'
+  title: 'Home'
 };
 </script>
 
