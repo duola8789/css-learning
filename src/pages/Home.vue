@@ -1,5 +1,8 @@
 <template>
-  <h1 class="content-title">Hello CSS!</h1>
+  <div>
+    <h1 class="content-title">Hello CSS!</h1>
+    <ElInput></ElInput>
+  </div>
 </template>
 
 <script>
