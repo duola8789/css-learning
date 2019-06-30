@@ -69,6 +69,16 @@ export default {
     transform: scale(1);
   }
 
+  .router-link-active {
+    color: @mainColor;
+  }
+
+  .router-link-active:before {
+    visibility: visible;
+    transform: scale(1);
+    background-color: @mainColor;
+  }
+
   .content-title {
     font-size: 30px;
     text-align: left;
