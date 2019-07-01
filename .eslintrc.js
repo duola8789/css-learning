@@ -16,10 +16,6 @@ module.exports = {
     'parser': 'babel-eslint'
   },
   'rules': {
-    // // 禁止不写分号
-    // "semi": 2,
-    // // 一行长度不应该超过120个字符
-    // "max-len": [2, 120],
     'no-console': 0,
     'no-debug': 0,
     // 缩进

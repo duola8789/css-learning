@@ -1,6 +1,8 @@
 <template>
   <div>
-    <h1 class="content-title">透明边框</h1>
+    <h1 class="content-title">
+      <a href="https://duola8789.github.io/2019/06/30/03%20读书笔记/10 You-need-to-know-css/#透明边框">透明边框</a>
+    </h1>
     <section class="intro">
       <el-card class="box-card">
         <p>默认情况下，背景的颜色会延伸至边框下层，所以如果边框设置为透明色，会被背景色覆盖掉。</p>
@@ -85,13 +87,6 @@ export default {
 </script>
 
 <style scoped lang="less">
-  .example {
-    margin: 20px 0;
-  }
-  .intro {
-    margin: 20px 0;
-    text-align: left;
-  }
   .outer {
     margin: 20px 0;
     background: #B4A078;
@@ -109,6 +104,7 @@ export default {
     margin: 0 auto;
     padding: 20px;
     background: #FFF ;
+    text-align: justify;
     background-size: cover;
     font-size: 40px;
     line-height: 1.2;

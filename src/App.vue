@@ -83,6 +83,16 @@ export default {
     font-size: 30px;
     text-align: left;
     margin-bottom: 20px;
+    a {
+      font-size: inherit;
+      font-weight: inherit;
+    }
+  }
+
+  .section-title {
+    font-size: 26px;
+    text-align: left;
+    margin: 15px 0;
   }
 
   .code-inline {
@@ -97,6 +107,8 @@ export default {
   }
 
   .intro {
+    margin: 20px 0;
+    text-align: left;
     p {
       margin: 10px 0;
       line-height: 1.5;
@@ -109,6 +121,10 @@ export default {
         list-style-position: inside;
       }
     }
+  }
+
+  .example {
+    margin: 20px 0;
   }
 </style>
 
