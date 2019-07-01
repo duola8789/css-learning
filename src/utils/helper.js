@@ -14,7 +14,7 @@ export default {
       const componentConfig = requireComponent(fileName);
 
       // 剥去文件名开头的 `./` 和结尾的扩展名
-      const componentName = fileName.replace(/^\.\/(\w*)\.\w+$/, '$1');
+      const componentName = fileName.replace(/^\.\/(\w*)\.\w+$/, '$1').toLowerCase();
 
       // 全局注册组件
       const component = Vue.component(
