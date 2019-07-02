@@ -95,17 +95,6 @@ export default {
     margin: 15px 0;
   }
 
-  .code-inline {
-    padding: 0 2px;
-    margin: 0 2px;
-    font-size: inherit;
-    font-weight: inherit;
-    border-radius: 2px;
-    background: rgba(220, 220, 220, 0.5);
-    word-wrap: break-word;
-    font-family: consolas, "Liberation Mono", courier, monospace;
-  }
-
   .intro {
     margin: 20px 0;
     text-align: left;
@@ -125,7 +114,17 @@ export default {
 
   .example {
     margin: 20px 0;
+    .input-container {
+      text-align: left;
+    }
+
+    .input-title {
+      font-size: 20px;
+      text-align: left;
+      margin-bottom: 20px;
+    }
   }
+
 </style>
 
 <style scoped lang="less">

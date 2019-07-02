@@ -2,9 +2,9 @@
  * Created by zh on 2019/6/30.
  */
 import Vue from 'vue';
-import { Radio, Card } from 'element-ui';
+import { Radio, Card, Switch } from 'element-ui';
 
-[Radio, Card].forEach(comp => {
+[Radio, Card, Switch].forEach(comp => {
   Vue.component(comp.name, comp);
 });
 
