@@ -56,6 +56,7 @@ const CODE1
 export default {
   name: 'InsideBorderRadius',
   title: '边框内圆角',
+  createdAt: '2019-07-02 10:47:50',
   data() {
     return {
       code1: CODE1,

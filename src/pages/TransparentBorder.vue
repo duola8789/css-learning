@@ -59,8 +59,7 @@ const CODE
 export default {
   name: 'TransparentBorder',
   title: '透明边框',
-  components: {},
-  props: [],
+  createdAt: '2019-07-02 10:46:12',
   data() {
     return {
       code: CODE,

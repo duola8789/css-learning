@@ -87,6 +87,7 @@ const CODE2
 export default {
   name: 'MultipleBorders',
   title: '多重边框',
+  createdAt: '2019-07-01 10:44:48',
   data() {
     return {
       code1: CODE1,

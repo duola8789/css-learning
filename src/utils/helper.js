@@ -9,7 +9,21 @@ export default {
     // 创建自己的（模块）上下文
     const requireComponent = require.context('@/pages/', true, /\w*\.vue$/);
 
-    return requireComponent.keys().map(fileName => {
+    return requireComponent.keys().sort((a, b) => {
+      // 根据 createdAt 属性排序
+      const aComp = requireComponent(a).default || requireComponent(a);
+      const bComp = requireComponent(b).default || requireComponent(a);
+
+      const aTime = new Date(aComp.createdAt).valueOf();
+      const bTime = new Date(bComp.createdAt).valueOf();
+
+      if (!aTime || !bTime) {
+        throw new Error('新建组件应当添加createdAt属性');
+      }
+
+      return aTime - bTime;
+    }).map(fileName => {
+
       // 获取组件配置
       const componentConfig = requireComponent(fileName);
 
@@ -32,7 +46,7 @@ export default {
         path: `/${componentName}`,
         name: componentName,
         component,
-        title,
+        title
       };
     });
 

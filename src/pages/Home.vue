@@ -7,7 +7,8 @@
 <script>
 export default {
   name: 'home',
-  title: '首页'
+  title: '首页',
+  createdAt: '2019-06-30 10:44:48',
 };
 </script>
 
