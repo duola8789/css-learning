@@ -4,6 +4,15 @@
       <a href="https://duola8789.github.io/2019/06/30/03%20读书笔记/10 You-need-to-know-css/#边框内圆角">边框内圆角</a>
     </h1>
     <section>
+      <h2 class="section-title">
+        <a href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/outline">
+          <prism inline>outline</prism>
+        </a>
+        +
+        <a href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/box-shadown">
+          <prism inline>box-shadow</prism>
+        </a>
+      </h2>
       <section class="intro">
         <el-card class="box-card">
           <p>
@@ -18,7 +27,7 @@
           <p>
             所以这里取值最大值不能超过<prism inline>outline</prism>的宽度<prism inline>w</prism>，
             而最小宽度根据勾股定理不能小于<prism inline>1.414r - r</prism>，即<prism inline>0.414r</prism>，
-            在我们的设置中，扩展半径的取值范围是<prism inline>[5, 2.07]</prism>
+            在我们的设置中，扩展半径的取值范围是<prism inline>[2.07, 5)</prism>
           </p>
           <p></p>
         </el-card>
@@ -34,7 +43,7 @@
           </div>
         </el-card>
         <div class="outer">
-          <div class="inner" :style="value ? { 'box-shadow': '0 0 0 5px darkgreen' } : ''">
+          <div class="inner" :style="value ? { 'box-shadow': '0 0 0 4px darkgreen' } : ''">
             我们知道box-shadow是会紧贴border-radius圆角边的，但是，描边outline并不会与圆角边border-radius贴合，
             我们可以将两者组合，通过box-shadow去填补描边outline所产生的间隙来达到我们想要的效果。
           </div>
@@ -50,7 +59,7 @@ const CODE1
 `.inner {
     border-radius: 5px;
     outline: 5px solid darkgreen;
-    box-shadow: 0 0 0 5px darkgreen;
+    box-shadow: 0 0 0 4px darkgreen;
 }`;
 
 export default {
@@ -69,7 +78,7 @@ export default {
 <style scoped lang="less">
   .inner {
     width: 400px;
-    margin: 50px 0 35px;
+    margin: 20px 5px 35px;
     padding: 20px;
     line-height: 1.5;
     text-align: justify;

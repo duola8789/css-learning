@@ -4,7 +4,11 @@
       <a href="https://duola8789.github.io/2019/06/30/03%20读书笔记/10 You-need-to-know-css/#多重边框">多重边框</a>
     </h1>
     <section>
-      <h2 class="section-title"><prism inline>box-shadow</prism></h2>
+      <h2 class="section-title">
+        <a href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/box-shadown">
+          <prism inline>box-shadow</prism>
+        </a>
+      </h2>
       <section class="intro">
         <el-card class="box-card">
           <p>
@@ -32,11 +36,18 @@
         </div>
       </div>
     </section>
+
     <hr>
+
     <section>
       <h2 class="section-title">
-        <prism inline>outline</prism> +
-        <prism inline>outline-offset</prism>
+        <a href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/outline">
+          <prism inline>outline</prism>
+        </a>
+        +
+        <a href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/outline-offset">
+          <prism inline>outline-offset</prism>
+        </a>
       </h2>
       <section class="intro">
         <el-card class="box-card">
@@ -100,7 +111,7 @@ export default {
 <style scoped lang="less">
   .inner {
     width: 400px;
-    margin: 50px 0 35px;
+    margin: 50px 15px 35px;
     padding: 20px;
     line-height: 1.5;
     text-align: justify;

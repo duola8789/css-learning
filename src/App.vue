@@ -93,6 +93,9 @@ export default {
     font-size: 26px;
     text-align: left;
     margin: 15px 0;
+    a {
+      font-size: 26px;
+    }
   }
 
   .intro {
@@ -124,7 +127,6 @@ export default {
       margin-bottom: 20px;
     }
   }
-
 </style>
 
 <style scoped lang="less">
@@ -190,8 +192,8 @@ export default {
       right: 0;
       top: 0;
       display: block;
-      width: 100px;
-      height: 100px;
+      width: 80px;
+      height: 80px;
       border-radius: 0 0 0 100%;
       background: rgba(150, 150, 150, 0.4);
       cursor: pointer;
@@ -199,20 +201,20 @@ export default {
       &:before {
         content: '';
         display: block;
-        width: 50px;
-        height: 50px;
+        width: 40px;
+        height: 40px;
         position: absolute;
-        left: 35px;
-        top: 15px;
+        left: 30px;
+        top: 12px;
         background: url('assets/images/css-tricks.png') no-repeat;
         background-size: contain;
-        transform: scale(1);
+        transform: rotate(0);
         visibility: visible;
-        transition: all 0.3s linear;
+        transition: all 0.5s ease-in;
       }
 
       &:hover:before {
-        transform: scale(1.2);
+        transform: rotate(180deg);
       }
 
     }
