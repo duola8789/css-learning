@@ -57,7 +57,7 @@
             可以取值有：
           </p>
           <ol class="ol-list">
-            <li><prism inline>border-box</prism>: 图片边界与<prism inline>border</prism>重合/li>
+            <li><prism inline>border-box</prism>: 图片边界与<prism inline>border</prism>重合</li>
             <li><prism inline>padding-box</prism>: 图片边界与<prism inline>padding</prism>区域重合</li>
             <li><prism inline>content-box</prism>: 图片边界与<prism inline>content</prism>区域重合</li>
           </ol>
