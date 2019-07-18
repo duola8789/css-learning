@@ -127,6 +127,9 @@ export default {
       margin-bottom: 20px;
     }
   }
+  .box-card {
+    margin: 10px 0;
+  }
 </style>
 
 <style scoped lang="less">

@@ -1,7 +1,7 @@
 <template>
   <div>
     <h1 class="content-title">
-      <a href="https://duola8789.github.io/2019/06/30/03%20读书笔记/10 You-need-to-know-css/#圆和椭圆">四边形</a>
+      <a href="https://duola8789.github.io/2019/06/30/03%20读书笔记/10 You-need-to-know-css/#四边形">四边形</a>
     </h1>
     <section>
       <h2 class="section-title">
